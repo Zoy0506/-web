@@ -55,11 +55,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 							<ul class="nav navbar-nav">
-								<li><a href="index.html">Home</a></li>	
+								<li><a href="index.html">主页</a></li>	
 								<!-- Mega Menu -->
-								<li class="active"><a href="#" class="act">Services</a></li>
+								<li class="active"><a href="#" class="act">游戏服务</a></li>
 								<!-- Videos -->
-								<li><a href="videos.html">Videos</a></li>
+								<li><a href="videos.html">游戏直播</a></li>
 								<!-- 个人中心 -->
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心<b class="caret"></b></a>
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</ul>
 								</li>
 								<!-- mail us -->
-								<li><a href="mail.html">Mail Us</a></li>
+								<li><a href="mail.html">联系我们</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -117,10 +117,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="cart box_1 animated wow slideInRight">
 						<ul class="login_regist_ul">
 							<li class="login_li">
-								<a href="login.html" style="text-align: right;">Login</a>
+								<a href="login.html" style="text-align: right;">登录</a>
 							</li>
 							<li>
-								<a href="register.html" style="text-align: right;">Register</a>
+								<a href="register.html" style="text-align: right;">注册</a>
 							</li>
 						</ul>
 					</div>
@@ -144,8 +144,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="breadcrumbs">
 		<div class="container">
 			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-				<li class="active">Services</li>
+				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>主页</a></li>
+				<li class="active">游戏服务</li>
 			</ol>
 		</div>
 	</div>
@@ -153,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="col-md-3 products-left">
 				<div class="filter-price animated wow slideInUp" data-wow-delay=".5s">
-					<h3>Filter By Price</h3>
+					<h3>价格</h3>
 					<ul class="dropdown-menu1">
 							<li><a href="">								               
 							<div id="slider-range"></div>							
@@ -164,13 +164,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						$(window).load(function(){
 						 $( "#slider-range" ).slider({
 								range: true,
-								min: 0,
-								max: 100000,
-								values: [ 20000, 80000 ],
-								slide: function( event, ui ) {  $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+								min: 20,
+								max:60,
+								values: [ 20, 60],
+								slide: function( event, ui ) {  $( "#amount" ).val( "¥" + ui.values[ 0 ] + " - ¥" + ui.values[ 1 ] );
 								}
 					 });
-					$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+					$( "#amount" ).val( "¥" + $( "#slider-range" ).slider( "values", 0 ) + " - ¥" + $( "#slider-range" ).slider( "values", 1 ) );
 
 
 						});//]]>
@@ -179,9 +179,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <!---->
 				</div>
 				<div class="categories animated wow slideInUp" data-wow-delay=".5s">
-					<h3>Categories</h3>
-					<ul class="cate">
-						<li><a href="products.html">Best Selling</a> <span>(15)</span></li>
+				  类型
+				  <ul class="cate">
+					<li><a href="products.html">Best Selling</a> <span>(15)</span></li>
 						<li><a href="products.html">Man</a> <span>(16)</span></li>
 							<ul>
 								<li><a href="products.html">Accessories</a> <span>(2)</span></li>
@@ -310,17 +310,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="products-right-grids animated wow slideInRight" data-wow-delay=".5s">
 						<div class="sorting">
 							<select id="country" onchange="change_country(this.value)" class="frm-field required sect">
-								<option value="null">Default sorting</option>
-								<option value="null">Sort by popularity</option> 
-								<option value="null">Sort by average rating</option>					
-								<option value="null">Sort by price</option>								
+								<option value="null">排序</option>
+								<option value="null">服务时长</option> 
+								<option value="null">用户评价</option>					
+								<option value="null">人气</option>								
 							</select>
 						</div>
 						<div class="sorting-left">
 							<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
-								<option value="null">Item on page 9</option>
-								<option value="null">Item on page 18</option> 
-								<option value="null">Item on page 32</option>					
+								<option value="null">1</option>
+								<option value="null">2</option> 
+								<option value="null">3</option>					
 								<option value="null">All</option>								
 							</select>
 						</div>
