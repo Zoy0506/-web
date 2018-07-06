@@ -147,6 +147,9 @@ ul.social-icons li a.instagram:hover{
 .multi-column-dropdown li a {
     color: #999 !important;
 }
+.dropdown-menu-right .dropdown_menuitem_right a, .dropdown-menu-right .dropdown_menuitem_right h6{
+	text-align: right;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
 }
@@ -187,10 +190,13 @@ ul.multi-column-dropdown h6 {
     min-width: 700px;
     padding: 30px 30px;
 }
-
+.dropdown-menu.columns-2 {
+    min-width: 400px;
+    padding: 30px 30px;
+}
 .dropdown-menu.columns-1 {
     min-width: 200px;
-    padding: 15px 10px 10px;
+    padding: 30px 30px;
 }
 
 a.shift_right, h6.shift_right{
@@ -380,7 +386,7 @@ a.simpleCart_empty {
 }
 /*-- //banner --*/
 /*-- banner-bottom --*/
-.banner-bottom,.new-collections,.checkout,.collections-bottom,.timer,.register,.products,.typo,.mail,.single,.login,.single-related-products{
+.banner-bottom,.new-collections,.checkout,.collections-bottom,.timer,.register,.publish-service,.products,.typo,.mail,.single,.login,.single-related-products{
 	padding:5em 0;
 }
 .banner-bottom-grid-left{
@@ -645,7 +651,7 @@ figure.effect-julia:hover p {
 /*-----------------*/
 /*-- //banner-bottom --*/
 /*-- new-collections --*/
-.new-collections h3,h3.title,.mail h3,.single-related-products h3,.login h3,.register h3{
+.new-collections h3,h3.title,.mail h3,.single-related-products h3,.login h3,.register h3, .publish-service h3{
 	text-align: center;
     color:#222;
     margin: 0;
@@ -660,6 +666,16 @@ figure.effect-julia:hover p {
     background: #D5D5D5;
     content: '';
 }
+
+.publish-service h3:before, .publish-service h3:after{
+	position: absolute;
+    top: 50%;
+    width: 10%;
+    height: 1px;
+    background: #D5D5D5;
+    content: '';
+}
+
 .new-collections h3:before,.single-related-products h3:before{
 	left:17%;
 }
@@ -1178,7 +1194,7 @@ p.est{
 }
 .sorting{
 	float:right;
-	width: 35%;
+	width: 25%;
 }
 .sorting-left{
 	float: right;
@@ -1268,13 +1284,15 @@ ul.paging {
 	border:1px solid #999;
 }
 .categories{
-	margin:3em 0;
+	margin:1.5em 0 3em;
 }
 .categories h3,.filter-price h3,.new-products h3{
 	font-size: 1.5em;
     color: #212121;
     margin: 0;
-    padding: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-bottom: .5em;
     background: #f5f5f5;
     text-transform: uppercase;
     text-align: center;
@@ -1864,7 +1882,7 @@ label.radio {
 }
 .radio i{
     position: absolute;
-    top: 5px;
+    top: -2px;
     left: 0;
     display: block;
     width: 10px;
@@ -2361,12 +2379,16 @@ td.invert-image a img {
 	color:#999;
 }
 .checkout-left-basket {
-    float: left;
-    width: 25%;
+    margin: 0 auto;
+    width: 40%;
+}
+.checkout-center-basket{
+	margin: 0 auto;
+    margin: 2em 0 0 0em;
 }
 .checkout-right-basket{
 	float: right;
-    margin: 8em 0 0 0em;
+    margin: 2em 0 0 0em;
 }
 .checkout-left-basket ul li span {
     float: right;
